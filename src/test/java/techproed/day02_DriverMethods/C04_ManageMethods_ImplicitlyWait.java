@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C04_ManageMethods_ImplicitlyWait { // ImplicitlyWait; web elementlerinin görünür hale gelmesini bekler ve daha sonra işlemlerini gerçekleştirir.
+public class C04_ManageMethods_ImplicitlyWait { // ImplicitlyWait; webelementlerinin görünür hale gelmesini bekler ve daha sonra işlemlerini gerçekleştirir.
     public static void main(String[] args) {
 
         System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");

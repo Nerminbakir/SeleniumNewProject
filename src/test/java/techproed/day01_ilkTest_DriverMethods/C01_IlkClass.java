@@ -7,14 +7,14 @@ public class C01_IlkClass {
     public static void main(String[] args) {
 
 //        System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
-//        // Java uygulamalarında sistem özelliklerini ayarlamak için setProperty() methodu ile kullanırız.
+//        // Java uygulamalarında sistem özelliklerini ayarlamak için setProperty() methodunu kullanırız.
 //        WebDriver driver = new ChromeDriver();
 //
 //        driver.get("https://www.techproeducation.com");
 
         System.setProperty("chromeDriver","src/resources/drivers/chromedriver.exe");
-        //Java uygulamalarında system özelliiklerini ayarlamak için setProperty() methodu ile kullanırız.
-        // setProperty() methodu ile classımıza driver2ın fiziki yolunu belirtiriz.
+        //Java uygulamalarında system özelliiklerini ayarlamak için setProperty() methodunu kullanırız.
+        // setProperty() methodu ile classımıza driver'ın fiziki yolunu belirtiriz.
         System.out.println(System.getProperty("chromeDriver"));
         //getProperty ile "Key" değerini girerek "value" a ulaşılabilir.
 

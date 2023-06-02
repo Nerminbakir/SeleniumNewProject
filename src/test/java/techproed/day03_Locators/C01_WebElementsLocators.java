@@ -21,10 +21,20 @@ public class C01_WebElementsLocators {
 
         // aramakutusunu locate ediniz ve Nutella aratınız
         WebElement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox"));
-        aramaKutusu.sendKeys("Nutella" + Keys.ENTER);
+        aramaKutusu.sendKeys("Nutella" + Keys.ENTER); //Keys.ENTER'dan önce virgülde kullanılabilir.
 
         // webelement'e assagn etmeden de yapabiliriz. Daha sonra kullanmayacaksak tek seferlik kullanımlar için daha uygundur.
         // driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Nutella" + Keys.ENTER);
+
+         /*
+        Bir webelementin locate'ini birden fazla kullanacaksaniz bir Webelement'te değişken olarak atayabilirsiniz.
+        Webelement aramaKutusu = driver.findElement(By.id("twotabsearchtextbox")); şeklinde kullanabiliriz
+        1-Locate işlemi bittikten sonra eğer webelemente bir metin göndereceksek sendKeys() methodu kullanırız
+        2-webelemente tıklayacaksak click() methodu kullanırız
+        3-webelementin üzerindeki yazıyı almak istiyorsak getText() methodunu kullanırız
+        4-sendKeys() methodundan sonra(yani webElemente metin gönderdikten sonra) Keys.ENTER ile ya da
+        submit() methodu ile manuel olarak enter yaptığımız gibi otomasyonda da yapabiliriz.
+         */
 
         Thread.sleep(2000);
         // sayfayı kapatınız

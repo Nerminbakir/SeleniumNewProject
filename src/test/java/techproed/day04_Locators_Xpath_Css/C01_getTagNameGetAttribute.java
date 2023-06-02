@@ -1,7 +1,6 @@
-package techproed.day04_Locators;
+package techproed.day04_Locators_Xpath_Css;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,6 +30,12 @@ public class C01_getTagNameGetAttribute {
         }else System.out.println("TEST FAİLED");
 
         // arama kutusunun name attribute'nun degerinin "field-keywords" oldugunu test edin
+            /*
+            <input type="text" id="twotabsearchtextbox" value="" name="field-keywords" autocomplete="off"
+            placeholder="Search Amazon" class="nav-input nav-progressive-attribute" dir="auto"
+            tabindex="0" aria-label="Search Amazon" spellcheck="false">
+             */
+
         String actuelAttribute = aramaKutusu.getAttribute("name");
         String expectedAttribute = "field-keywords";
 
@@ -40,14 +45,6 @@ public class C01_getTagNameGetAttribute {
 
         // sayfayı kapatın
         driver.close();
-
-
-
-
-
-
-
-
 
 
     }

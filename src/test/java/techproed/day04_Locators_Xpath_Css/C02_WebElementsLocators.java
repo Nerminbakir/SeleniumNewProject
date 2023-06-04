@@ -26,7 +26,7 @@ public class C02_WebElementsLocators {
 
         // sonuc yazısını yazdırın
         List<WebElement> sonucYazilari = driver.findElements(By.className("sg-col-inner"));
-        WebElement sonucYazisi = sonucYazilari.get(0);
+        WebElement sonucYazisi = sonucYazilari.get(0); // 216 tane sonuc cıktı. Biz ilkini alacagımız için get(0) dedik.
 
         System.out.println(sonucYazisi.getText());
 

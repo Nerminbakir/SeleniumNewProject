@@ -53,7 +53,7 @@ public class HomeWork01 {
         driver.manage().window().maximize();
         Thread.sleep(3000);
 
-        //9. 9.Browser’i kapatin
+        //9. Browser’i kapatin
         driver.close();
 
     }

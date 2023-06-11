@@ -49,7 +49,7 @@ public class LocatorsXpath {
 
         Thread.sleep(2000);
 
-        //Sayfayı kapatın
+        // 6. Sayfayı kapatın
         driver.close();
 
 

@@ -30,6 +30,9 @@ public class C02_WebElementsLocators {
 
         System.out.println(sonucYazisi.getText());
 
+        // class="sg-col-inner yazısı 1 of 120 olarak çıktıgı için (findElements) ve biz ilk olanı alacagımız için get(0) yazdık
+        // sonucYazisinı yazdırmak için getText() methodunu kullandık
+
         // sonuc sayısını yazdırın
         String sonucSayisi[] = sonucYazisi.getText().split(" ");
         System.out.println(Arrays.toString(sonucSayisi));

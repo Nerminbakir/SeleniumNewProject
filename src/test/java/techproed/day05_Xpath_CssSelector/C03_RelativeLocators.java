@@ -17,15 +17,15 @@ public class C03_RelativeLocators {
     Relative Locators
 
     - Bir web elementi direk locate edemedigimiz durumlarda,
-    o web elementi etrafındaki web elementlerin refaransi ile tarif etmemizi saglar
+    o web elementi etrafındaki web elementlerin referansi ile tarif etmemizi saglar
 
-    - Bir web sayfasında benzer özellikler sahip webelementlerin oldugu durumlarda kullanılabilir
+    - Bir web sayfasında benzer özelliklere sahip webelementlerin oldugu durumlarda kullanılabilir
 
-    - above==> Belirtilen elementin üstünde olan elementi secer
-    - below==> Belirtilen elementin altında olan elementi secer
-    - to_left_of==> Belirtilen elementin solunda olan elementi secer
-    - to_right_of==> Belirtilen elementin sagında olan elementi secer
-    - near==> Belirtilen elementin yanında/yakınında olan elementi secer
+    - above        ==> Belirtilen elementin üstünde olan elementi secer
+    - below        ==> Belirtilen elementin altında olan elementi secer
+    - to_left_of   ==> Belirtilen elementin solunda olan elementi secer
+    - to_right_of  ==> Belirtilen elementin sagında olan elementi secer
+    - near         ==> Belirtilen elementin yanında/yakınında olan elementi secer
 
      */
 

@@ -10,7 +10,7 @@ import java.time.Duration;
 import java.util.List;
 
 public class Odev {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver", "src/resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -18,32 +18,40 @@ public class Odev {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         // http://the-internet.herokuapp.com/add_remove_elements/ adresine gidiniz
-        driver.get("https://the-internet.herokuapp.com/add_remove_elements");
+        driver.get("http://the-internet.herokuapp.com/add_remove_elements/");
 
         // Add Element butonuna 100 defa basınız
+        // 100 defa basıldığını test ediniz
+        int counterEnter = 0;
         for (int i = 0; i < 100; i++) {
         WebElement addElement = driver.findElement(By.cssSelector("button[onclick='addElement()']"));
         addElement.click();
+        counterEnter++;
         }
+        System.out.println("counterEnter = " + counterEnter);
 
-        // 100 defa basıldığını test ediniz
         // 90 defa delete butonuna basınız
         // 90 defa basıldığını doğrulayınız
+
+        int counterDelete = 0;
+        for (int i = 0; i < 90; i++) {
+            WebElement delete = driver.findElement(By.xpath("//*[@id='elements']"));
+            delete.click();
+            counterDelete++;
+        }
+        System.out.println("counterDelete = " + counterDelete);
+
         // Sayfayı kapatınız
+        driver.close();
+
+
+   }
+
+}
 
 
 
 
 
 
-
-
-    }
-
-
-
-
-
-
-    }
 

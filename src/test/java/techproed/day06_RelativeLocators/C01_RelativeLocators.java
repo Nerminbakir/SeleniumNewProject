@@ -39,32 +39,34 @@ public class C01_RelativeLocators {
         System.out.println("***********************");
 
         //Bikes altındaki tum linkleri(webelement) console'a yazdıralım
-        List<WebElement> linlkerListesi = driver.findElements(By.xpath("(//*[@class='a-list-item'])[position()>=10 and position()<=16]"));
+        List<WebElement> linklerListesi = driver.findElements(By.xpath("(//*[@class='a-list-item'])[position()>=9 and position()<=15]"));
         /*
         XPATH kullanımında bir sayfadaki webelementlere müdahale etmek istedigimizde xpath ile locate aldıgımızda
-        birden fazla sonuc verebilir. [position()>=10 and position()<=16] bu kullanımla aralık belirterek istedigimiz WE'leri secip müdahale edebiliriz.
+        birden fazla sonuc verebilir. [position()>=9 and position()<=15] bu kullanımla aralık belirterek istedigimiz WE'leri secip müdahale edebiliriz.
          */
 
         // lambda ile yazdırdık
-        linlkerListesi.forEach(t-> System.out.println(t.getText()));
+        linklerListesi.forEach(t-> System.out.println(t.getText()));
         System.out.println("***********************");
 
         //foreach ile yazdırdık
-        for (WebElement w:linlkerListesi) {
+        for (WebElement w:linklerListesi) {
             System.out.println(w.getText());
         }
 
         // Bu linklerin hepsini tıklayalım ve sayfa baslıklarını alalım.
 
-        for (int i = 0; i < linlkerListesi.size(); i++) {
-            linlkerListesi = driver.findElements(By.xpath("(//*[@class='a-list-item'])[position()>=10 and position()<=16]"));
-            System.out.println(linlkerListesi.get(i).getText());
-            linlkerListesi.get(i).click();
+        for (int i = 0; i < linklerListesi.size(); i++) {
+            linklerListesi = driver.findElements(By.xpath("(//*[@class='a-list-item'])[position()>=9 and position()<=15]"));
+            System.out.println(linklerListesi.get(i).getText());
+            linklerListesi.get(i).click();
             Thread.sleep(3000);
             driver.navigate().back();
             Thread.sleep(3000);
         }
 
+
+        driver.close();
     }
 
         // completeBike.click();

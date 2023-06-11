@@ -24,7 +24,7 @@ public class C01_Xpath {
             aramaKutusu.sendKeys("city bike" + Keys.ENTER);
 
             // Hybrid Bikes bölümüne tıklayın
-            WebElement hybridBikes = driver.findElement(By.xpath("//span[text()='Hybrid Bikes']"));
+            WebElement hybridBikes = driver.findElement(By.xpath("//span[text()='Hybrid Bikes']")); // text() kullanıldıgında @ işareti kullanılmaz.
             hybridBikes.click();
 
             // sonuc sayısını yazdırın

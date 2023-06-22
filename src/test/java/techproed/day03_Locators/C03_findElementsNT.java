@@ -22,7 +22,7 @@ public class C03_findElementsNT {
         /*
         findelement ile bir webelemente ulaşabilirken, birden fazla webelement için findelements() methodunu
         kullanırız.Bu webelementlerin sayısına ulaşmak için yada bu webelementlerin yazısını konsola yazdırabilmek için
-        List<Webelemet> linklerListesi = driver.findElements(By.locator("locator değeri")) olarak kullanırız.
+        List<Webelement> linklerListesi = driver.findElements(By.locator("locator değeri")) olarak kullanırız.
         Oluşturmuş olduğumuz list'i loop ile konsola yazdırabiliriz
          */
         List<WebElement> linklerListesi = driver.findElements(By.tagName("a"));
